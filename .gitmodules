@@ -1,0 +1,30 @@
+[submodule "UnityWithLua/Packages/RFramework"]
+	path = UnityWithLua/Packages/RFramework
+	url = https://github.com/raystudio9236/RFramework-UnityPackage.git
+[submodule "UnityWithLua/Assets/LuaScripts/libs/array"]
+	path = UnityWithLua/Assets/LuaScripts/libs/array
+	url = https://github.com/RayStudio36/array.lua.git
+[submodule "UnityWithLua/Assets/LuaScripts/libs/event"]
+	path = UnityWithLua/Assets/LuaScripts/libs/event
+	url = https://github.com/RayStudio36/event.lua.git
+[submodule "UnityWithLua/Assets/LuaScripts/libs/log"]
+	path = UnityWithLua/Assets/LuaScripts/libs/log
+	url = https://github.com/RayStudio36/log.lua.git
+[submodule "UnityWithLua/Assets/LuaScripts/libs/string_builder"]
+	path = UnityWithLua/Assets/LuaScripts/libs/string_builder
+	url = https://github.com/RayStudio36/StringBuilder.lua.git
+[submodule "UnityWithLua/Assets/LuaScripts/libs/utility"]
+	path = UnityWithLua/Assets/LuaScripts/libs/utility
+	url = https://github.com/yangruihan/utility.lua.git
+[submodule "UnityWithLua/Assets/LuaScripts/libs/class"]
+	path = UnityWithLua/Assets/LuaScripts/libs/class
+	url = https://github.com/RayStudio36/30log.git
+[submodule "UnityWithLua/Assets/LuaScripts/libs/math"]
+	path = UnityWithLua/Assets/LuaScripts/libs/math
+	url = https://github.com/RayStudio36/math.lua.git
+[submodule "UnityWithLua/Assets/LuaScripts/libs/pool"]
+	path = UnityWithLua/Assets/LuaScripts/libs/pool
+	url = https://github.com/RayStudio36/pool.lua.git
+[submodule "UnityWithLua/Assets/LuaScripts/libs/timer"]
+	path = UnityWithLua/Assets/LuaScripts/libs/timer
+	url = https://github.com/RayStudio36/timer.lua.git
