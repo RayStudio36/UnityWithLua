@@ -1,8 +1,25 @@
-# UnityWithLua
+# Unity With Lua
 
-Unity template project with XLua
+Unity template project with Lua
+
+## Install && Configure
+
+```
+git clone -r https://github.com/RayStudio36/UnityWithLua.git your_project_name
+
+cd your_project_name
+
+chmod +x ./configure.sh
+./configure.sh
+```
+
+## ExampleScene
+
+Open `Assets/Scenes/SampleScene`
 
 ## Dependency
+
+- Unity: 2019.4.12f1
 
 - Unity Lib
 
@@ -22,26 +39,43 @@ Unity template project with XLua
     - timer.lua https://github.com/RayStudio36/timer.lua.git
     - serpent https://github.com/RayStudio36/serpent.git
 
-## Install && Configure
-
-```
-git clone -r https://github.com/RayStudio36/UnityWithLua.git your_project_name
-cd your_project_name
-chmod +x ./configure.sh
-./configure.sh
-```
-
-## Example
-
-Open `SampleScene`
-
 ## Document
 
-Lua file: `Assets/LuaScripts`
+### Structure info
 
-Entry file: `Assets/LuaScripts/main.lua`
+- Lua source file: `Assets/LuaScripts`
+
+- Entry file: `Assets/LuaScripts/main.lua`
+
+### With ECS framework
 
 If you want to develop with ECS framework, you can use [this](https://github.com/RayStudio36/ray-ecs.lua).
+
+1. Add submodules
+
+    ```
+    cd your_unity_project_path
+
+    git submodule add https://github.com/RayStudio36/tiny-ecs.git Assets/LuaScripts/libs/tiny-ecs
+    git submodule add https://github.com/RayStudio36/ray-ecs.lua.git Assets/LuaScripts/libs/ray-ecs
+    ```
+
+2. Add require to `init.lua`
+
+    Add below code into `Assets/LuaScripts/init.lua` at the end.
+    
+    ```lua
+    ----------
+    ---ECS
+    ----------
+    _G.TinyECS = require("libs.tiny-ecs.tiny")
+    local RayECS = require("libs.ray-ecs.init")
+    _G.System = RayECS.System
+    _G.Comp = RayECS.Comp
+    _G.World = RayECS.World
+    _G.Entity = RayECS.Entity
+    _G.Global = RayECS.Global
+    ```
 
 ## LICENSE
 

@@ -1,7 +1,6 @@
 ----------
 ---Libs
 ----------
----@class Class
 _G.Class = require("libs.class.30log")
 
 local log = require("libs.log.log")
