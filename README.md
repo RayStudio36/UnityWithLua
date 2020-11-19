@@ -21,10 +21,13 @@ Unity template project with XLua
     - pool.lua https://github.com/RayStudio36/pool.lua.git
     - timer.lua https://github.com/RayStudio36/timer.lua.git
 
-## Install
+## Install && Configure
 
 ```
-git clone -r https://github.com/RayStudio36/UnityWithLua.git
+git clone -r https://github.com/RayStudio36/UnityWithLua.git your_project_name
+cd your_project_name
+chmod +x ./configure.sh
+./configure.sh
 ```
 
 ## Example
