@@ -28,3 +28,6 @@
 [submodule "UnityWithLua/Assets/LuaScripts/libs/timer"]
 	path = UnityWithLua/Assets/LuaScripts/libs/timer
 	url = https://github.com/RayStudio36/timer.lua.git
+[submodule "UnityWithLua/Assets/LuaScripts/libs/serpent"]
+	path = UnityWithLua/Assets/LuaScripts/libs/serpent
+	url = https://github.com/RayStudio36/serpent.git
