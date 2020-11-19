@@ -20,6 +20,7 @@ Unity template project with XLua
     - math.lua https://github.com/RayStudio36/math.lua.git
     - pool.lua https://github.com/RayStudio36/pool.lua.git
     - timer.lua https://github.com/RayStudio36/timer.lua.git
+    - serpent https://github.com/RayStudio36/serpent.git
 
 ## Install && Configure
 
