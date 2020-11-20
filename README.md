@@ -5,7 +5,7 @@ Unity template project with Lua
 ## Install && Configure
 
 ```
-git clone -r https://github.com/RayStudio36/UnityWithLua.git your_project_name
+git clone --recursive https://github.com/RayStudio36/UnityWithLua.git your_project_name
 
 cd your_project_name
 
