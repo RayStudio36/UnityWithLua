@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using RFramework.Common.Log;
 using RFramework.Common.Singleton;
@@ -41,7 +41,14 @@ namespace Lua
         {
             if (_luaEnv != null)
             {
-                _updateFunc?.Invoke(Time.deltaTime);
+                try
+                {
+                    _updateFunc?.Invoke(Time.deltaTime);
+                }
+                catch (Exception e)
+                {
+                    RLog.LogError(e);
+                }
 
                 _luaEnv.Tick();
 
@@ -112,7 +119,14 @@ namespace Lua
             InitLuaEnv();
             LoadMainScript();
 
-            _startFunc?.Invoke();
+            try
+            {
+                _startFunc?.Invoke();
+            }
+            catch (Exception e)
+            {
+                RLog.LogError(e);
+            }
         }
 
         private IEnumerator RestartCo(IEnumerator beforeCo)
@@ -124,7 +138,14 @@ namespace Lua
 
         private IEnumerator DestroyEnvCo()
         {
-            _destroyFunc?.Invoke();
+            try
+            {
+                _destroyFunc?.Invoke();
+            }
+            catch (Exception e)
+            {
+                RLog.LogError(e);
+            }
 
             _startFunc = null;
             _updateFunc = null;
